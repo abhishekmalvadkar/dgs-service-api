@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: dgs-service-api
+  jpa:
+    open-in-view: false
+  liquibase:
+    change-log: classpath:/db/changelog/changelog-master.xml
+    enabled: true
+
+server:
+  port: 9091
+
+logging:
+  file:
+    name: /var/dgs/log/dgs-service-api/dgs-service-api.log

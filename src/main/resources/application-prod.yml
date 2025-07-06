@@ -1,0 +1,18 @@
+dgs:
+  db:
+    host: ${DB_HOST}
+    port: ${DB_PORT}
+    schema: ${DB_SCHEMA}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+spring:
+  datasource:
+    url: jdbc:mysql://${dgs.db.host}:${dgs.db.port}/${dgs.db.schema}
+    username: ${dgs.db.username}
+    password: ${dgs.db.password}
+
+logging:
+  level:
+    'com.amalvadkar.dgs': warn
+
